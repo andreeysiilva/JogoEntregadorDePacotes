@@ -5,19 +5,22 @@ using UnityEngine;
 public class Driver : MonoBehaviour
 {
 
-    float velocidadeDirecao = 1f;
+    [SerializeField] float velocidadeDirecao = 1f;
     [SerializeField] float velocidadeMovimento = 0.01f;
-    
-    // Start is called before the first frame update
+
+
+    // O início é chamado antes da primeira atualização do quadro
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    // A atualização é chamada uma vez por quadro
     void Update()
     {
-        transform.Rotate(0, 0, velocidadeDirecao);
-        transform.Translate(0, velocidadeMovimento, 0);
+        float controleDirecao = Input.GetAxis("Horizontal") * velocidadeDirecao * Time.deltaTime;
+        float controleMovimento = Input.GetAxis("Vertical") * velocidadeMovimento * Time.deltaTime;
+        transform.Rotate(0, 0, -controleDirecao);
+        transform.Translate(0, controleMovimento, 0);
     }
 }
