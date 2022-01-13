@@ -38,6 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\Collision.cs" />
      <Compile Include="Assets\Driver.cs" />
+     <Compile Include="Assets\FollowCamera.cs" />
+     <None Include="Assets\AutoSave\ReadMe.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
