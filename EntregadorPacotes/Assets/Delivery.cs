@@ -8,6 +8,7 @@ public class Delivery : MonoBehaviour
     [SerializeField] Color32 corDoPacote = new Color32 (1, 1, 1, 1);
     [SerializeField] Color32 semCorPacote = new Color32 (1, 1, 1, 1);
     [SerializeField] float tempoDestruicao = 0.5f;
+    
     bool temPacote;
 
     SpriteRenderer redenrizadorSprite;

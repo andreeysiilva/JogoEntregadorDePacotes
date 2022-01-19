@@ -9,6 +9,8 @@ public class Driver : MonoBehaviour
     [SerializeField] float velocidadeMovimento = 20f;
     [SerializeField] float velocidadeLenta = 15f;
     [SerializeField] float turbo = 30f;
+    
+    
 
 
     // A atualização é chamada uma vez por quadro
